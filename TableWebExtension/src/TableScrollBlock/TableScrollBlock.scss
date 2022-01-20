@@ -1,0 +1,18 @@
+﻿.table-scroll-block,
+.table-scroll-block > div,
+.table-scroll-block .system-disclosure-body,
+.table-scroll-block .table-relative-container {
+    height: 100%;
+}
+
+.table-scroll-block .table-scroll-container {
+    max-height: 100%;
+}
+
+.table-scroll-block .dv-sticky-table-header {
+    transform: translateY(-1px);
+}
+
+.table-scroll-block .dv-table:not(.dv-table-layout-fixed) {
+    width: calc(100% - 5px);
+}

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Controls>
+  <Control Name="SimpleComposition" ControlGroupResourceKey="ControlGroup_Samples" DisplayName="Simple composition">
+    <Properties>
+      <Property Type="Name" />
+      <Property Type="Visibility" />
+      <!-- DefaultValue задает значение поля по умолчанию -->
+      <Property Type="StandardCssClass" DefaultValue="simple-composition" />
+      <Property Type="CustomCssClasses" />
+    </Properties>
+  </Control>
+  <Control Name="SampleTable" ControlGroupResourceKey="ControlGroup_Samples" DisplayName="Sample table">
+    <Properties>
+      <Property Type="Name" />
+      <Property Type="Visibility" />
+      <!-- DefaultValue задает значение поля по умолчанию -->
+      <Property Type="StandardCssClass" DefaultValue="sample-table" />
+      <Property Type="CustomCssClasses" />
+	  <Property Name="UseOwnScroll" Category="BehaviorCategory" DataType="System.Boolean" DefaultValue="true" />
+	  <Property Name="UseStaticData" Category="BehaviorCategory" DataType="System.Boolean" DefaultValue="true" />
+	  <Property Name="KnownModelSize" Category="BehaviorCategory" DataType="System.Boolean" DefaultValue="true" />	  
+    </Properties>
+  </Control>
+  <Control Name="TableScrollContainer" ControlGroupResourceKey="ControlGroup_Samples" IsParentControl="true" DisplayName="Table scroll block">
+    <Properties>
+	  <!-- Стандартные свойства Block -->
+      <Property Type="Name" />
+      <Property Type="Header" />
+      <Property Type="Visibility" />
+      <Property Type="VisibilityEditOperation" />
+      <Property Type="StandardCssClass" DefaultValue="table-scroll-block" />
+      <Property Type="CustomCssClasses" />
+      <Property Type="Collapsible" />
+      <Property Type="IsCollapsed" />
+      <Property Type="MinWidth" />
+      <Property Type="Width" />
+      <Property Type="LabelWidth" />
+      <Property Type="Order" />
+      <Property Type="Alignment" />
+      <Property Type="EditOperation" ExcludeFromIL="false" />
+      <Property Type="IsInheritedEditOperation" />
+      <Property Name="Paddings" ResourceKey="Block_Paddings"
+                Category="AppearanceCategory" DataType="System.Boolean" DefaultValue="true" />
+      <Property Name="MaxHeight" ResourceKey="Block_MaxHeight"
+               Category="AppearanceCategory" DataType="System.Int32"
+               Editor="NonNegativeIntegerEditor" DefaultValue="0" />      
+    </Properties>
+  </Control>
+</Controls>
+
